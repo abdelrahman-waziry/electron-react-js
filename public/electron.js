@@ -23,11 +23,13 @@ const
       win.webContents.openDevTools()
     }
     // Load index file
-    win.loadURL(isDev ? devURL : buildPath)
-    // on close
-    win.on('closed', () => {
-      win = null
+    win.loadURL(isDev ? devURL : buildPath).then(() => {
+      // on close
+      win.on('closed', () => {
+        win = null
+      })
     })
+
     // Quit when all windows are closed.
     app.on('window-all-closed', () => {
       // On macOS it is common for applications and their menu bar
