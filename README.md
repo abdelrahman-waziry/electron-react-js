@@ -13,7 +13,7 @@ If you are like me and likes ReactJS, you'll love this kit. This is kit is creat
 ## Build
 
  - **To Pack your app**, run `yarn electron-pack` or `npm run electron-pack`
- - **To Build a distribution version**, run yarn electron-dist`enter code here` or `npm run electron-dist`
+ - **To Build a distribution version**, `run yarn electron-dist` or `npm run electron-dist`
 
 ## TODO
 
