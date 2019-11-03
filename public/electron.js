@@ -19,7 +19,9 @@ const
     // create window
     let win = new BrowserWindow(options)
     // enable dev tools
-    win.webContents.openDevTools()
+    if (isDev) {
+      win.webContents.openDevTools()
+    }
     // Load index file
     win.loadURL(isDev ? devURL : buildPath)
     // on close
