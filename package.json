@@ -1,0 +1,71 @@
+{
+  "name": "electron-react-js",
+  "homepage": "./",
+  "version": "0.1.0",
+  "private": true,
+  "main": "public/electron.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "electron-is-dev": "^1.1.0",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-scripts": "3.2.0"
+  },
+  "scripts": {
+    "start": "rescripts start",
+    "build": "rescripts build",
+    "test": "rescripts test",
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "electron-dev": "concurrently \"BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\"",
+    "postinstall": "electron-builder install-app-deps",
+    "preelectron-pack": "yarn build",
+    "preelectron-dist": "yarn electron-pack",
+    "electron-pack": "electron-builder --dir",
+    "electron-dist": "electron-builder"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@rescripts/cli": "^0.0.13",
+    "@rescripts/rescript-env": "^0.0.11",
+    "concurrently": "^5.0.0",
+    "electron": "^7.0.1",
+    "electron-builder": "^22.1.0",
+    "typescript": "^3.6.4",
+    "wait-on": "^3.3.0"
+  },
+  "author": {
+    "name": "Mohamad Eldhemy",
+    "email": "imdhemy@gmail.com",
+    "url": "http://www.dhemy.studio"
+  },
+  "build": {
+    "appId": "studio.dhemy.my-app",
+    "productName": "MyApp",
+    "copyright": "Copyright © 2019 ${author}",
+    "mac": {
+      "category": "public.app-category.utilities"
+    },
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
+  }
+}
