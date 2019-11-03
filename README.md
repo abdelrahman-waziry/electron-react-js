@@ -1,5 +1,5 @@
 # Electron ReactJS Starter Kit
-If you are like me and likes ReactJS, you'll love this kit. This is kit is created to help Electron JS developers to bootstrap their projects with the CRA (Create React App). Create your next cross-platform application using React Components.
+If you are like me and likes ReactJS, you'll love this kit. This kit is created to help Electron JS developers to bootstrap their projects with the CRA (Create React App). Create your next cross-platform application using React Components.
 
 ## Installation
 
@@ -17,7 +17,7 @@ If you are like me and likes ReactJS, you'll love this kit. This is kit is creat
 
 ## TODO
 
- - [ ] Open dev tools only on development.
+ - [X] Open dev tools only on development.
  - [ ] Run nodeJS server on startup to run as a backend server.
  - [ ] Support a persistent Data Base.
  - [ ] Enhance the README file.
