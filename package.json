@@ -3,7 +3,7 @@
   "homepage": "./",
   "version": "0.1.0",
   "private": true,
-  "main": "public/index.js",
+  "main": "public/electron.js",
   "dependencies": {
     "dotenv": "^8.2.0",
     "electron-is-dev": "^1.1.0",
@@ -23,8 +23,8 @@
     "electron": "electron .",
     "electron-dev": "concurrently \"BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\"",
     "postinstall": "electron-builder install-app-deps",
-    "preelectron-pack": "yarn build",
-    "preelectron-dist": "yarn electron-pack",
+    "preelectron-pack": "npm run build",
+    "preelectron-dist": "npm run electron-pack",
     "electron-pack": "electron-builder --dir",
     "electron-dist": "electron-builder"
   },
