@@ -3,13 +3,17 @@
   "homepage": "./",
   "version": "0.1.0",
   "private": true,
-  "main": "public/electron.js",
+  "main": "public/index.js",
   "dependencies": {
     "dotenv": "^8.2.0",
     "electron-is-dev": "^1.1.0",
+    "memdown": "^5.1.0",
+    "pouchdb-adapter-leveldb": "^7.1.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "rxdb": "^8.7.3",
+    "rxjs": "^6.5.3"
   },
   "scripts": {
     "start": "rescripts start",
