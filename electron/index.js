@@ -3,6 +3,8 @@ const path = require('path')
 const isDev = require('electron-is-dev')
 const windowOptions = require('../electron/config/appWindow')
 
+// From /electron dir
+
 // app url
 const devURL = 'http://localhost:3000'
 const buildPath = `file://${path.join(__dirname, '../build/index.html')}`
