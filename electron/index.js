@@ -1,7 +1,7 @@
 const { app, BrowserWindow } = require('electron')
 const path = require('path')
 const isDev = require('electron-is-dev')
-const windowOptions = require('../electron/config/appWindow')
+const windowOptions = require('../config/appWindow')
 
 // From /electron dir
 

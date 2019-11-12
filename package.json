@@ -68,7 +68,9 @@
     "files": [
       "build/**/*",
       "node_modules/**/*",
-      "electron/**/*"
+      "electron/**/*",
+      "config/**/*",
+      "database/**/*"
     ],
     "directories": {
       "buildResources": "assets"
